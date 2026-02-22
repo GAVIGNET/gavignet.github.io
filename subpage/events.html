@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Brandon Joyce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/subpage.css">
+    <link rel="stylesheet" href="../style/events.css">
+    <script src="../script/events.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a href="../index.html" class="logo">Brandon Joyce</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="howard.html">Howard Kleger</a></li>
+                    <li><a href="appearances.html">Press</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="photoalbum.html">Gallery</a></li>
+                    <li><a href="foodspiral.html">Food Spiral</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="page-banner">
+            <span class="eyebrow">South Philadelphia Athenæum</span>
+            <h1>Events</h1>
+        </div>
+
+        <div class="events-schedule">
+            <h2>Our Daily Schedule:</h2>
+            <ul>
+                <li><b>1:00 PM</b> - Arise.</li>
+                <li><b>2:00 PM</b> - The Trivium.</li>
+                <li><b>4:00 PM</b> - Lunch/Dialectic</li>
+                <li><b>6:00 PM</b> - The Quadrivium (minus astronomy)</li>
+                <li><b>7:00 PM</b> - We dine. More dialectic.</li>
+                <li><b>9:00 PM</b> - Two hours for the body, to either tone or strengthen. Oils and tinctures followed
+                    by merciless agon. More oils and tinctures.</li>
+                <li><b>11:00 PM</b> - Astronomy.</li>
+                <li><b>12:00 PM</b> - Cartoons</li>
+                <li><b>1:00 AM</b> - Until dawn - Speculation.</li>
+            </ul>
+        </div>
+
+        <p
+            style="margin-top: 2rem; font-size: 1.05rem; line-height: 1.8; background: linear-gradient(135deg, #f5f7fa 0%, #f0f4f8 100%); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--color-accent);">
+            Come to our <strong>Survey of Western Philosophy 101</strong> Intro Super Short Course. (Check local
+            listings)<br><br>
+            Or: Contact the <strong>Philosophy Department and Mathsquad</strong> at the South Philadelphia
+            Athenaeum.<br><br>
+            <em>Bad ideas, experiments, high actions: always welcome.</em><br>
+            <em>Anything in the medium of experience.</em>
+        </p>
+
+
+        <h2 class="events-banner-h2">EVENTS at: THE SOUTH PHILADELPHIA ATHENAEUM!!</h2>
+
+        <div class="month-selector">
+            <h3>Select a Month</h3>
+            <div class="month-grid">
+                <button onclick="toggleMonth('january')" class="month-btn">JAN</button>
+                <button onclick="toggleMonth('february')" class="month-btn">FEB</button>
+                <button onclick="toggleMonth('march')" class="month-btn">MAR</button>
+                <button onclick="toggleMonth('april')" class="month-btn">APR</button>
+                <button onclick="toggleMonth('may')" class="month-btn">MAY</button>
+                <button onclick="toggleMonth('june')" class="month-btn">JUN</button>
+                <button onclick="toggleMonth('july')" class="month-btn">JUL</button>
+                <button onclick="toggleMonth('august')" class="month-btn">AUG</button>
+                <button onclick="toggleMonth('september')" class="month-btn">SEP</button>
+                <button onclick="toggleMonth('october')" class="month-btn">OCT</button>
+                <button onclick="toggleMonth('november')" class="month-btn">NOV</button>
+                <button onclick="toggleMonth('december')" class="month-btn">DEC</button>
+            </div>
+        </div>
+
+        <div id="january" class="buttonContents" style="display:none"></div>
+        <div id="february" class="buttonContents" style="display:none"></div>
+        <div id="march" class="buttonContents" style="display:none"></div>
+        <div id="april" class="buttonContents" style="display:none"></div>
+        <div id="may" class="buttonContents" style="display:none"></div>
+        <div id="june" class="buttonContents" style="display:none"></div>
+        <div id="july" class="buttonContents" style="display:none"></div>
+        <div id="august" class="buttonContents" style="display:none"></div>
+        <div id="september" class="buttonContents" style="display:none"></div>
+        <div id="october" class="buttonContents" style="display:none"></div>
+        <div id="november" class="buttonContents" style="display:none"></div>
+        <div id="december" class="buttonContents" style="display:none"></div>
+
+        <div style="margin-top: 2rem; text-align: center; padding: 1rem;">
+            <a href="http://www.flickr.com/photos/richarddavis/"
+                style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--color-accent); color: white; border-radius: 6px; font-weight: 500; transition: background 0.2s ease;">📷
+                Photos by Dick Davis</a>
+        </div>
+
+        <div class="info-box" style="margin-top: 1.5rem;">
+            <p style="margin: 0; font-size: 0.95rem; line-height: 1.8;">
+                <strong>We are currently reassembling in North Philadelphia, just South of Temple.</strong><br><br>
+                Those interested in studios or who would like to join our email list should write to:<br>
+                <strong style="color: var(--color-indigo);">brandonjoyce@hotmail.com</strong>
+            </p>
+        </div>
+
+        <div
+            style="margin-top: 2rem; background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <h3 style="color: var(--color-accent); margin-top: 0;">Philadelphia Destroys the SPA</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0;"><a href="http://www.lifeactionrevival.org/tossed1.html"
+                        style="font-weight: 500;">→ Part One</a></li>
+                <li style="padding: 0.5rem 0;"><a href="http://www.lifeactionrevival.org/tossed2.html"
+                        style="font-weight: 500;">→ Part Two</a></li>
+            </ul>
+        </div>
+
+        <br>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Brandon Joyce / Life Action Revival. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/brandonjoyce" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://facebook.com/brandonjoyce" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://x.com/brandonjoyce" target="_blank" rel="noopener">X</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/contact.js"></script>
+
+</body>
+
+</html>

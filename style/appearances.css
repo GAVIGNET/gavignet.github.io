@@ -1,0 +1,96 @@
+/* Appearances page specific styles
+   This file reuses the project's CSS variables from style.css
+   and provides a two-column layout for the press/cameos list. */
+
+/* Ensure the press card matches project card visuals */
+.press-card {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--spacing-sm);
+}
+
+.press-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* four items per row */
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: 0;
+}
+
+.press-item {
+    background: transparent;
+    padding: calc(var(--spacing-sm) * 0.75);
+    border-radius: 6px;
+    transition: background-color 0.18s ease, transform 0.12s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 120px;  /* Increased from 72px to 120px */
+    border: 1px solid transparent;
+}
+
+.press-item:nth-child(odd) {
+    background-color: #f0f4f8;  
+}
+
+.press-item:nth-child(even) {
+    background-color: #f8f4f0;  
+}
+
+.press-item:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+    border-color: var(--color-border);
+}
+
+.press-item a {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--color-text);
+}
+
+.press-item a:focus,
+.press-item a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.press-source {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* Make sure the heading for the page has breathing room */
+.container.grid-section h1 {
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-heading);
+}
+
+/* Responsive: adjust columns based on screen size */
+@media (max-width: 1024px) {
+    .press-list {
+        grid-template-columns: repeat(2, 1fr); /* two items per row on tablets */
+    }
+}
+
+@media (max-width: 700px) {
+    .press-list {
+        grid-template-columns: 1fr;
+    }
+
+    .press-item {
+        min-height: auto;
+    }
+}
+
+/* Small tweak for print */
+@media print {
+    .press-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
